@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:black;
+   
+}
+body {
+    background-color: lightblue;
+  }
+.btn-style {
+    font-size: 35px;
+    margin: 8px;
+    padding: 0 30px;
+    line-height: 2;
+    border-radius: 10px;
+    border: 1px solid black;
+    color:rgb(0, 0, 0);
+}
+.btn-plus {
+    background-color: rgb(49, 119, 248);
+    border-radius: 10px;
+  
+}
+.btn-plus:hover{
+    background-color: rgb(78, 139, 252);
+}
+.btn-plus:active{
+    background-color: rgb(8, 91, 247);
+}
+.btn-minus {
+    background-color: rgb(247, 125, 44);
+}
+.btn-minus:hover {
+    background-color: rgb(250, 159, 99);
+}
+.btn-minus:active {
+    background-color: rgb(238, 106, 19);
+}
+ button {
+    cursor: pointer;
+}
+header h1{
+    text-align: center;
+    margin: 25px;
+   font-size: 3em;;
+   color: rgb(0, 0, 0);
+}
+#result{
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+#buttons {
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
+article{
+    margin-top:100px;
+    margin-bottom:50px;
+}
+#decrease{
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+#increase{
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
