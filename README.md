@@ -25,10 +25,11 @@ The code uses three functions to create the different elements:
     createCounterText() creates the h1 section which shows the value of the counter
     createIncreaseButton() creates the button to increment the value
     createDecreaseButton() creates the button to decrease the value
+    creaetResetButton()    creates the button to reset the value
+The code also uses some functions to handle math calculations:
 
-The code also uses two functions to handle math calculations:
-
+    resetCounter()  This function is used to reset the counter
     incrementNumber() increases the value of the counter by 1
     reduceNumber() decrements the counter value by 1, with a check to prevent the value from going negative
 
-In the end, the code uses three setTimeouts to create a transition animation for the different elements. The background of the body is set to #b0c4de.
+In the end, the code uses setTimeouts to create a transition animation for the dinamic elements created with javascript.
