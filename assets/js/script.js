@@ -66,8 +66,10 @@ function createDecreaseButton() { // This function is used to create the decreme
 
 //Some math calculations
 function resetCounter() {//This function is used to reset the counter
-    number = 0;
+ if  (number != 0){
+    number=0;
     document.getElementById('result').innerHTML = `Hai resettato il counter a :  ${number}`;
+} else document.getElementById('result').innerHTML = `Inizio : ${number}`;
 }
 
 function increaseNumber() { //This function is used to increase by 1 the counter value.
