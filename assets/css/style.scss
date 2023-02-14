@@ -1,0 +1,122 @@
+$font-family: Verdana;
+$font-size: 20px;
+$color-black: black;
+$border-radius: 10px;
+$color-green: rgb(2, 250, 35);
+$color-red: rgb(255, 0, 0);
+$color-orange: rgb(245, 133, 12);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $color-black;
+}
+
+.btn-style {
+  font-size: 35px;
+  margin: 8px;
+  padding: 0 30px;
+  line-height: 2;
+  border-radius: $border-radius;
+  border: 1px solid $color-black;
+  color: $color-black;
+}
+
+.btn-plus {
+  background-color: $color-green;
+  border-radius: $border-radius;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-plus:hover {
+     $color-green-lighten: lighten($color-green, 8%);
+     background-color: $color-green-lighten;
+}
+
+.btn-plus:active {
+    $color-green-darkened: darken($color-green, 8%);
+  background-color:$color-green-darkened;
+}
+
+.btn-minus {
+  background-color: $color-red;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-minus:hover {
+    $color-red-lighten: lighten($color-red , 8%);
+    background-color: $color-red-lighten;
+}
+
+.btn-minus:active {
+    $color-red-darkened: darken($color-red, 8%);
+    background-color:$color-red-darkened;
+}
+
+.btn-reset {
+  background-color: $color-orange;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-reset:hover {
+    $color-orange-lighten: lighten($color-orange, 8%);
+    background-color: $color-orange-lighten;
+}
+
+.btn-reset:active {
+    $color-orange-darkened: darken($color-orange, 8%);
+    background-color:$color-orange-darkened;
+}
+
+button {
+  cursor: pointer;
+}
+
+header h1 {
+  text-align: center;
+  margin: 25px;
+  font-size: 3em;
+  color: $color-black;
+}
+
+#result {
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#rowId {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.lastH1 {
+  text-align: center;
+  color: $color-red;
+  animation: blink 1.5s linear 4;
+}

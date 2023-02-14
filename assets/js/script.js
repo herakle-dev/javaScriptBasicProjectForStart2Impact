@@ -1,4 +1,4 @@
-document.body.style.backgroundColor = "#b0c4de"; //Some style 
+document.body.style.backgroundColor = "#F5F5F5"; //Some style 
 var number = 0;//Variable counter outside 
 
 //Event domcontentloaded 
@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', createCounterText());
 document.addEventListener('DOMContentLoaded', createIncreaseButton());
 document.addEventListener('DOMContentLoaded', createDecreaseButton());
 document.addEventListener('DOMContentLoaded', creaetResetButton());
-
 
 //creating element function
 function createCounterText() {  // This function is used to create the  counter inside a div
@@ -43,7 +42,7 @@ function createIncreaseButton() { // This function is used to create the increme
     const buttonPlus = document.createElement('button');
     buttonPlus.type = 'button';
     buttonPlus.id = 'increase'
-    buttonPlus.className = 'btn-plus btn-style col-lg-3';
+    buttonPlus.className = 'btn-plus btn-style col-lg-4';
     buttonPlus.innerHTML = 'Clicca qui per incrementare (+)';
     firstRow.appendChild(buttonPlus);
     document.body.appendChild(smallDiv);
@@ -56,14 +55,13 @@ function createDecreaseButton() { // This function is used to create the decreme
     const buttonMinus = document.createElement('button');
     buttonMinus.type = 'button';
     buttonMinus.id = 'decrease'
-    buttonMinus.className = 'btn-minus btn-style col-lg-3';
+    buttonMinus.className = 'btn-minus btn-style col-lg-4';
     buttonMinus.innerHTML = 'Clicca qui per decrementare (-)';
     document.getElementById('rowId').appendChild(buttonMinus);
     document.getElementById('decrease').addEventListener('click', decreaseNumber);
     /*This line (line 46) of code takes the id of the button element and from an onclick event
   which triggers the decreaseNumber function*/
 }
-
 
 
 //Some math calculations
@@ -75,7 +73,7 @@ function resetCounter() {//This function is used to reset the counter
 function increaseNumber() { //This function is used to increase by 1 the counter value.
     this.number = number++;
     document.getElementById('result').innerHTML = `Hai incrementato :  ` + number;
-    console.log('increase = ' + number);
+
 
 }
 function decreaseNumber() { //This function is used to decrease by 1 the counter value.
@@ -87,11 +85,11 @@ function decreaseNumber() { //This function is used to decrease by 1 the counter
         this.number = number--;
         document.getElementById('result').innerHTML = 'Hai decrementato : ' + number;
     }
-    console.log('decrease = ' + number);
+
 }
 
-//Some animation
 
+//Some animation
 setTimeout(function () {//Some transition animation 
     document.getElementById("result").style.opacity = 1;
 }, 1300);

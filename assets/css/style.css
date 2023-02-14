@@ -1,117 +1,107 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Verdana;
-    font-size: 20px;
-    color: black;
-
-}
-
-body {
-    background-color: lightblue;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana;
+  font-size: 20px;
+  color: black;
 }
 
 .btn-style {
-    font-size: 35px;
-    margin: 8px;
-    padding: 0 30px;
-    line-height: 2;
-    border-radius: 10px;
-    border: 1px solid black;
-    color: rgb(0, 0, 0);
+  font-size: 35px;
+  margin: 8px;
+  padding: 0 30px;
+  line-height: 2;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
 }
 
 .btn-plus {
-    background-color: rgb(2, 250, 35);
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 0.3s;
-
+  background-color: rgb(2, 250, 35);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .btn-plus:hover {
-    background-color: rgb(53, 247, 79);
+  background-color: #28fd44;
 }
 
 .btn-plus:active {
-    background-color: rgb(5, 184, 29);
+  background-color: #02d21d;
 }
 
 .btn-minus {
-    background-color: rgb(255, 0, 0);
-    opacity: 0;
-    transition: opacity 0.3s;
+  background-color: rgb(255, 0, 0);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .btn-minus:hover {
-    background-color: rgb(253, 43, 43);
+  background-color: #ff2929;
 }
 
 .btn-minus:active {
-    background-color: rgb(170, 5, 5);
+  background-color: #d60000;
 }
 
 .btn-reset {
-    background-color: rgb(245, 133, 12);
-    opacity: 0;
-    transition: opacity 0.3s;
+  background-color: rgb(245, 133, 12);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .btn-reset:hover {
-    background-color: rgb(247, 149, 44);
+  background-color: #f79933;
 }
 
 .btn-reset:active {
-    background-color: rgb(219, 116, 5);
+  background-color: #d07009;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 header h1 {
-    text-align: center;
-    margin: 25px;
-    font-size: 3em;
-    ;
-    color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 25px;
+  font-size: 3em;
+  color: black;
 }
 
 #result {
-    text-align: center;
-    margin-bottom: 60px;
-    opacity: 0;
-    transition: opacity 0.3s;
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 #rowId {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 article {
-    margin-top: 100px;
-    margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 .lastH1 {
-    text-align: center;
-    color: red;
-    animation: blink 1.5s linear infinite;
-}
+  text-align: center;
+  color: rgb(255, 0, 0);
+  animation: blink 1.5s linear 4;
+}/*# sourceMappingURL=style.css.map */
