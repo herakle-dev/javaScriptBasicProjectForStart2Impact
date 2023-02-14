@@ -1,4 +1,6 @@
 # javaScriptBasicProjectForStart2Impact
+link free host : https://javascriptbasic-project-counter.netlify.app/
+
 Counter App
 
 This is a simple JavaScript application that functions as a counter. It allows the user to increase and decrease the counter value by clicking on two buttons.
