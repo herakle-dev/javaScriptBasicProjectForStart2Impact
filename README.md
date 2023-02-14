@@ -32,4 +32,4 @@ The code also uses some functions to handle math calculations:
     incrementNumber() increases the value of the counter by 1
     reduceNumber() decrements the counter value by 1, with a check to prevent the value from going negative
 
-In the end, the code uses three setTimeouts to create a transition animation for the different elements. The background of the body is set to #b0c4de.
+In the end, the code uses setTimeouts to create a transition animation for the dinamic elements created with javascript.
