@@ -27,6 +27,7 @@ The code uses three functions to create the different elements:
     createDecreaseButton() creates the button to decrease the value
     creaetResetButton()    creates the button to reset the value
 The code also uses some functions to handle math calculations:
+
     resetCounter()  This function is used to reset the counter
     incrementNumber() increases the value of the counter by 1
     reduceNumber() decrements the counter value by 1, with a check to prevent the value from going negative
