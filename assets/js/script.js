@@ -1,4 +1,5 @@
-document.body.style.backgroundColor = "#F5F5F5"; //Some style 
+
+
 var number = 0;//Variable counter outside 
 
 //Event domcontentloaded 
@@ -91,7 +92,7 @@ function decreaseNumber() { //This function is used to decrease by 1 the counter
 }
 
 
-//Some animation
+//Some animation & style
 setTimeout(function () {//Some transition animation 
     document.getElementById("result").style.opacity = 1;
 }, 1300);
@@ -101,6 +102,7 @@ setTimeout(function () {//Same animation  later
 setTimeout(function () {//Same animation  even later
     document.getElementById("decrease").style.opacity = 1;
 }, 1800);
-setTimeout(function () {//Same animation  even later
+setTimeout(function () {//Same animation  even more later
     document.getElementById("reset").style.opacity = 1;
-}, 2000);
+}, 2500);
+document.body.style.backgroundColor = "#F5F5F5"; //Dynamic background-color
