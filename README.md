@@ -1,7 +1,7 @@
 # javaScriptBasicProjectForStart2Impact
 
 Counter App
-This is a simple JavaScript application that functions as a counter. It allows the user to increase and decrease the counter value by clicking on two buttons.
+        This is a simple JavaScript application that functions as a counter. It allows the user to increase and decrease the counter value by clicking on two         buttons.
 Getting Started
         To use this application, simply open the index.html file in your web browser. The counter will start at 0 and you can click the "+" and "-" buttons           to change the value.
 Requirements
