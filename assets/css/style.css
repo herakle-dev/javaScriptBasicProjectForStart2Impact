@@ -1,8 +1,8 @@
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana;
     font-size: 20px;
     color: black;
 
@@ -23,29 +23,47 @@ body {
 }
 
 .btn-plus {
-    background-color: rgb(49, 119, 248);
+    background-color: rgb(2, 250, 35);
     border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
 
 }
 
 .btn-plus:hover {
-    background-color: rgb(78, 139, 252);
+    background-color: rgb(53, 247, 79);
 }
 
 .btn-plus:active {
-    background-color: rgb(8, 91, 247);
+    background-color: rgb(5, 184, 29);
 }
 
 .btn-minus {
-    background-color: rgb(247, 125, 44);
+    background-color: rgb(255, 0, 0);
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .btn-minus:hover {
-    background-color: rgb(250, 159, 99);
+    background-color: rgb(253, 43, 43);
 }
 
 .btn-minus:active {
-    background-color: rgb(238, 106, 19);
+    background-color: rgb(170, 5, 5);
+}
+
+.btn-reset {
+    background-color: rgb(245, 133, 12);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn-reset:hover {
+    background-color: rgb(247, 149, 44);
+}
+
+.btn-reset:active {
+    background-color: rgb(219, 116, 5);
 }
 
 button {
@@ -62,6 +80,7 @@ header h1 {
 
 #result {
     text-align: center;
+    margin-bottom: 60px;
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -71,17 +90,28 @@ header h1 {
     align-items: center;
     justify-content: center;
 }
+
 article {
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
-#decrease {
-    opacity: 0;
-    transition: opacity 0.3s;
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-#increase {
-    opacity: 0;
-    transition: opacity 0.3s;
+.lastH1 {
+    text-align: center;
+    color: red;
+    animation: blink 1.5s linear infinite;
 }

@@ -1,12 +1,14 @@
 document.body.style.backgroundColor = "#b0c4de"; //Some style 
 var number = 0;//Variable counter outside 
 
-//Event domcontentloaded + create functions
+//Event domcontentloaded 
 document.addEventListener('DOMContentLoaded', createCounterText());
 document.addEventListener('DOMContentLoaded', createIncreaseButton());
 document.addEventListener('DOMContentLoaded', createDecreaseButton());
-//creating element function
+document.addEventListener('DOMContentLoaded', creaetResetButton());
 
+
+//creating element function
 function createCounterText() {  // This function is used to create the  counter inside a div
     let container = document.createElement("div");
     container.className = "container";
@@ -19,7 +21,15 @@ function createCounterText() {  // This function is used to create the  counter 
     container.appendChild(textCounter);
     document.body.appendChild(container);
 }
-
+function creaetResetButton() { // This function is used to create the reset button
+    let resetButton = document.createElement('button');
+    resetButton.className = ('btn-reset btn-style col-lg-6');
+    resetButton.id = 'reset'
+    resetButton.type = 'button'
+    resetButton.innerHTML = ('Clicca qui per resettare il counter!');
+    document.getElementById('rowId').appendChild(resetButton);
+    document.getElementById('reset').addEventListener('click', resetCounter);
+}
 
 function createIncreaseButton() { // This function is used to create the increment button
     let smallDiv = document.createElement('div');
@@ -27,7 +37,7 @@ function createIncreaseButton() { // This function is used to create the increme
     smallDiv.id = 'buttons';
     let firstRow = document.createElement('div');
     firstRow.className = 'row';
-    firstRow.id = 'rowId' 
+    firstRow.id = 'rowId'
     smallDiv.appendChild(firstRow);
     document.body.appendChild(smallDiv);
     const buttonPlus = document.createElement('button');
@@ -41,6 +51,7 @@ function createIncreaseButton() { // This function is used to create the increme
     /*This line (line 33) of code takes the id of the button element and from an onclick event
    which triggers the increaseNumber function*/
 }
+
 function createDecreaseButton() { // This function is used to create the decrement button
     const buttonMinus = document.createElement('button');
     buttonMinus.type = 'button';
@@ -56,6 +67,10 @@ function createDecreaseButton() { // This function is used to create the decreme
 
 
 //Some math calculations
+function resetCounter() {//This function is used to reset the counter
+    number = 0;
+    document.getElementById('result').innerHTML = `Hai resettato il counter a :  ${number}`;
+}
 
 function increaseNumber() { //This function is used to increase by 1 the counter value.
     this.number = number++;
@@ -66,7 +81,7 @@ function increaseNumber() { //This function is used to increase by 1 the counter
 function decreaseNumber() { //This function is used to decrease by 1 the counter value.
     if (number <= 0) {
         alert('Purtroppo il counter non fa credito, quindi niente numeri sotto lo 0.');
-        
+
     }
     else {
         this.number = number--;
@@ -74,9 +89,6 @@ function decreaseNumber() { //This function is used to decrease by 1 the counter
     }
     console.log('decrease = ' + number);
 }
-
-
-
 
 //Some animation
 
@@ -89,3 +101,6 @@ setTimeout(function () {//Same animation  later
 setTimeout(function () {//Same animation  even later
     document.getElementById("decrease").style.opacity = 1;
 }, 1800);
+setTimeout(function () {//Same animation  even later
+    document.getElementById("reset").style.opacity = 1;
+}, 2000);
