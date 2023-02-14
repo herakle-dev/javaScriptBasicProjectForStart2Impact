@@ -25,7 +25,7 @@ The code uses three functions to create the different elements:
     createCounterText() creates the h1 section which shows the value of the counter
     createIncreaseButton() creates the button to increment the value
     createDecreaseButton() creates the button to decrease the value
-
+    creaetResetButton()    creates the button to reset the value
 The code also uses two functions to handle math calculations:
 
     incrementNumber() increases the value of the counter by 1
